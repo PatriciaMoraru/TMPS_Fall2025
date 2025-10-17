@@ -15,9 +15,17 @@ class Program
         IUnityContainer container = new UnityContainer();
         container.RegisterType<ILogger, FileLogger>();
         container.RegisterType<Employee>();
-        
+
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.Write("Username: ");
+        string username = Console.ReadLine()?.Trim() ?? string.Empty;
+
+        Console.Write("Password: ");
+        string password = Console.ReadLine() ?? string.Empty;   
+        Console.ResetColor();
+
         var auth = new AuthManager();
-        auth.Login("patricia_moraru", "tmps_fall25");
+        auth.Login(username, password);
 
         if (!auth.IsCurrentUserAuthenticated())
         {
@@ -28,6 +36,12 @@ class Program
         }
 
         var current = auth.GetCurrentLoggedInUser();
+
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.Write("\nEmployee full name: ");
+        string fullName = Console.ReadLine()?.Trim() ?? "Unknown";
+        Console.ResetColor();
+        current.FullName = fullName;
 
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.Write("\nEnter employee type (FTE / PTE / Contractor / CLevel): ");
@@ -90,6 +104,7 @@ class Program
         Console.WriteLine("------------------------------------------");
         Console.ResetColor();
 
+        Console.WriteLine($"{ "Name",-20} | {current.FullName}");
         Console.WriteLine($"{ "Type",-20} | {type}");
         Console.WriteLine($"{ "Hours Worked",-20} | {hours}");
         Console.WriteLine($"{ "Pay",-20} | {pay,10:C}");
@@ -98,15 +113,18 @@ class Program
             Console.WriteLine($"{ "Stock Options",-20} | {stock,10:C}");
         Console.WriteLine("------------------------------------------");
 
+        // --- performance summary ---
         EmployeeOperations ops = new EmployeeOperations();
-        string report = ops.ReportHours(current);
+        string perf = ops.ReportHours(current);
 
         Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine($"\nPerformance Summary → {report}");
+        Console.WriteLine($"\nPerformance Summary → {perf}");
         Console.ResetColor();
 
-        current.Save(current);
+        var fileLogger = new FileLogger();
+        fileLogger.LogError($"[CALC] Name={current.FullName}, Type={type}, Hours={hours:0.##}, Pay={pay:0.##}, Rewards={rewards:0.##}, Stock={stock:0.##}");
 
+        current.Save(current);
         auth.Logout();
 
         Console.ForegroundColor = ConsoleColor.DarkGray;

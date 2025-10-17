@@ -6,6 +6,8 @@ public class Employee
 
     public string EmployeeType { get; set; }
     public double TotalHoursWorked { get; set; }
+    public string FullName { get; set; } = "Unknown";
+    
 
     private readonly ILogger _logger;
 
@@ -30,7 +32,7 @@ public class Employee
                 return;
             }
 
-            _logger.LogError($"[INFO] Saved employee. Type={emp.EmployeeType}, Hours={emp.TotalHoursWorked:0.##}");
+            _logger.LogError($"[INFO] Saved employee. Name={emp.FullName}, Type={emp.EmployeeType}, Hours={emp.TotalHoursWorked:0.##}");
         }
         catch (Exception ex)
         {
