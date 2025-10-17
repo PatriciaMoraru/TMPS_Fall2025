@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2qV68zbMUzE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Felicia\\RiderProjects\\TMPS Labs\\Laboratory Work 1\\EmployMS\\EmployMS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Felicia\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Felicia\\.nuget\\packages\\unity\\5.11.10\\unity.5.11.10.nupkg.sha512"
+  ],
+  "logs": []
+}
