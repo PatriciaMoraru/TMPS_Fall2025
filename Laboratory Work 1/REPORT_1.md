@@ -145,29 +145,38 @@ Example program run:
 ==========================================
        Employee Management Simulation
 ==========================================
-Enter employee type (FTE / PTE / Contractor / CLevel): CLevel
-Enter hours worked this week: 45
+Username: moraru_patricia
+Password: maxverstappen
+[2025-10-17 20:35:51] User login initiated...
+[2025-10-17 20:35:51] [INFO] User 'moraru_patricia' successfully logged in.
+
+Employee full name: Edward Cullen
+
+Enter employee type (FTE / PTE / Contractor / CLevel): FTE
+Enter hours worked this week: 37
 
 ------------------------------------------
             EMPLOYEE REPORT
 ------------------------------------------
-Type                 | CLevel
-Hours Worked         | 45
-Pay                  | 4,000.00 lei
-Rewards              |   400.00 lei
-Stock Options        | 1,400.00 lei
+Name                 | Edward Cullen
+Type                 | FTE
+Hours Worked         | 37
+Pay                  | 370,00 lei
+Rewards              | 118,50 lei
 ------------------------------------------
 
-Performance Summary → [CLevel] 45h this period — Overtime
-Process complete. Press any key to exit...
+Performance Summary  [FTE] 37h this period - On track
+[2025-10-17 20:36:20] [CALC] Name=Edward Cullen, Type=FTE, Hours=37, Pay=370, Rewards=118,5, Stock=0
+[2025-10-17 20:36:20] [INFO] Saved employee. Name=Edward Cullen, Type=FTE, Hours=37
+[2025-10-17 20:36:20] [INFO] User successfully logged out.
 ```
 
 Generated `logs.txt`:
 ```
-[2025-10-17 14:42:25] User login initiated...
-[2025-10-17 14:42:25] [INFO] User 'patricia_moraru' successfully logged in.
-[2025-10-17 14:42:39] [INFO] Saved employee. Type=CLevel, Hours=45
-[2025-10-17 14:42:39] [INFO] User successfully logged out.
+[2025-10-17 20:35:51] [INFO] User 'moraru_patricia' successfully logged in.
+[2025-10-17 20:36:20] [CALC] Name=Edward Cullen, Type=FTE, Hours=37, Pay=370, Rewards=118,5, Stock=0
+[2025-10-17 20:36:20] [INFO] Saved employee. Name=Edward Cullen, Type=FTE, Hours=37
+[2025-10-17 20:36:20] [INFO] User successfully logged out.
 ```
 
 ---
