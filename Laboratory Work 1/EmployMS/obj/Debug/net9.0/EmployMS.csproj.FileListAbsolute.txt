@@ -16,3 +16,22 @@ C:\Users\Felicia\RiderProjects\EmployMS\EmployMS\obj\Debug\net9.0\refint\EmployM
 C:\Users\Felicia\RiderProjects\EmployMS\EmployMS\obj\Debug\net9.0\EmployMS.pdb
 C:\Users\Felicia\RiderProjects\EmployMS\EmployMS\obj\Debug\net9.0\EmployMS.genruntimeconfig.cache
 C:\Users\Felicia\RiderProjects\EmployMS\EmployMS\obj\Debug\net9.0\ref\EmployMS.dll
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\bin\Debug\net9.0\EmployMS.exe
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\bin\Debug\net9.0\EmployMS.deps.json
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\bin\Debug\net9.0\EmployMS.runtimeconfig.json
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\bin\Debug\net9.0\EmployMS.dll
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\bin\Debug\net9.0\EmployMS.pdb
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\bin\Debug\net9.0\Unity.Abstractions.dll
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\bin\Debug\net9.0\Unity.Container.dll
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\EmployMS.csproj.AssemblyReference.cache
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\EmployMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\EmployMS.AssemblyInfoInputs.cache
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\EmployMS.AssemblyInfo.cs
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\EmployMS.csproj.CoreCompileInputs.cache
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\EmployMS.sourcelink.json
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\EmployMS.csproj.Up2Date
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\EmployMS.dll
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\refint\EmployMS.dll
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\EmployMS.pdb
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\EmployMS.genruntimeconfig.cache
+C:\Users\Felicia\RiderProjects\TMPS Labs\Laboratory Work 1\EmployMS\obj\Debug\net9.0\ref\EmployMS.dll

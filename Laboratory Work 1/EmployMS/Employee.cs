@@ -7,27 +7,35 @@ public class Employee
     public string EmployeeType { get; set; }
     public double TotalHoursWorked { get; set; }
 
-    public ILogger logger;
+    private readonly ILogger _logger;
 
     public Employee(ILogger InputLogger)
     {
-        logger = InputLogger;
+        _logger = InputLogger;
     }
 
     public void Save(Employee emp)
     {
-
         try
         {
-            //code for saving
-            throw new Exception();
+            if (emp == null)
+            {
+                _logger.LogError("[ERROR] Save failed: employee is null.");
+                return;
+            }
+
+            if (emp.TotalHoursWorked < 0)
+            {
+                _logger.LogError($"[WARN] Save blocked: negative hours ({emp.TotalHoursWorked}).");
+                return;
+            }
+
+            _logger.LogError($"[INFO] Saved employee. Type={emp.EmployeeType}, Hours={emp.TotalHoursWorked:0.##}");
         }
         catch (Exception ex)
         {
-            logger.LogError(ex.Message);
-
+            _logger.LogError($"[ERROR] Save encountered an exception: {ex.Message}");
         }
-
     }
        
 }
