@@ -10,10 +10,14 @@ public abstract class Bread
 
     public void Bake()
     {
+        BakeryLogger.Instance.Log($"Starting to bake {Type} bread...");
+
         Console.WriteLine($"Preparing {Type} bread...");
         Service.OpenDoor();
         Service.CookBread();
         Service.CloseDoor();
         Console.WriteLine($"{Type} bread baked at {Price:C}.");
+
+        BakeryLogger.Instance.Log($"{Type} bread finished.\n");
     }
 }

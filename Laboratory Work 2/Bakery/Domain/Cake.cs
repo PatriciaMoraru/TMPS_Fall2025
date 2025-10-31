@@ -11,10 +11,14 @@ public abstract class Cake
 
     public void Bake()
     {
+        BakeryLogger.Instance.Log($"Starting to decorate {Type} cake...");
+
         Console.WriteLine($"Decorating {Type} cake...");
         Service.OpenDoor();
         Service.CookCake();
         Service.CloseDoor();
         Console.WriteLine($"{Type} cake ready for sale at {Price:C}.");
+
+        BakeryLogger.Instance.Log($"{Type} cake finished.\n");
     }
 }
