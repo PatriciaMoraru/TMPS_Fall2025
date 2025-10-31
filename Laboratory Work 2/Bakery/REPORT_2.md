@@ -286,7 +286,11 @@ Baking Sweet Cake...
 
 ---
 
-## Conclusion
-The Bakery Management System effectively illustrates all six creational design patterns in a simple and intuitive way.  
-Each pattern is modular, easy to understand, and grounded in a realistic domain — making the code both educational and extendable.
+## Conclusions
+
+The Bakery Management System successfully demonstrates six fundamental creational design patterns through a simple, cohesive domain example.  
+Each pattern was implemented independently to emphasize its core intent and usage while maintaining clarity and modularity.  
+Overall, the project achieves its educational goal — providing an intuitive and extensible demonstration of how creational design patterns can be applied in practice.
+
 ---
+
