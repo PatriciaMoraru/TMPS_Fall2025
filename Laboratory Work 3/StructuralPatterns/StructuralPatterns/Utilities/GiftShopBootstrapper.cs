@@ -1,5 +1,6 @@
 ﻿using StructuralPatterns.Composite;
 using StructuralPatterns.Decorator;
+using StructuralPatterns.Proxy;
 
 namespace StructuralPatterns.Utilities;
 
@@ -53,6 +54,24 @@ public static class GiftShopBootstrapper
 
         christmasBox.Add(coffeeLeaf);
         christmasBox.Add(socksLeaf);
+
+        // Gift 5: Mystery Box from an external partner, created lazily via Proxy
+        IGift mysteryProxy = new GiftProxy("Mystery Partner Box", () =>
+        {
+            // This code runs ONLY when price/description is actually needed
+            Console.WriteLine("[Proxy] Fetching details from external partner shop...");
+
+            IGift real = new BasicGift("Luxury Mystery Box (Partner Shop)", 300m);
+            real = new WrappingPaperDecorator(real, 30m);
+            real = new RibbonDecorator(real, 15m);
+            real = new PersonalizedCardDecorator(real, "Surprise inside!", 15m);
+
+            return real;
+        });
+
+        var mysteryLeaf = new GiftItemLeaf(mysteryProxy);
+        christmasBox.Add(mysteryLeaf);
+
 
         return catalog;
     }

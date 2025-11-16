@@ -1,5 +1,4 @@
-﻿using System;
-using StructuralPatterns.Composite;
+﻿using StructuralPatterns.Composite;
 
 namespace StructuralPatterns.Facade;
 
